@@ -1,0 +1,65 @@
+/*Establece el margen de la pagina (centrando todos los elementos)*/
+.container {
+  margin: 0 auto;
+  width: 768px;
+}
+/*Establece el background color del logo*/
+header {
+  background-color: black;
+}
+/*Posiciona el logo en el centro*/
+#logo {
+  display: block;
+  margin: 0 auto;
+}
+/*Convierte el número de página 
+como marca de agua*/
+small.page_no {
+  float: right;
+  color: #ddd;
+}
+/*Es la instrucción en dónde le dices a Html(mediante una clase)
+que tu página será iteractiva y podrá desplazarse de una página a 
+otra mediante un boton*/
+.pagination {
+  padding: 0px;
+}
+/*Establece la posición de los botones(anterior-hasta-siguiente) conforme al margen de la página*/
+ul{
+  float: left;
+  padding-left: 0px;
+}
+/*Le da formato a nuestros botones(anterior-hasta-siguiente) eliminando los puntos del listado
+que se mostraban en el formato principal antes de modificarlo*/
+li {
+  display: inline;
+}
+/*En este punto ya tenemos la barra de botones en forma orizontal; pero con esta instrucción le damos
+formato a la barra de botones; sin esta se verían solo como texto;*/
+a {
+  text-decoration: none;
+  color: #696969;
+  border: 1px solid #d9d9d9;
+  font-size: 18px;
+  padding: 10px;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  float: left;
+}
+/*Esta instruccion da formato al boton "anterior"*/
+.first {
+  border-radius: 5px 0px 0px 5px;
+}
+/*Esta instruccion da formato al boton "siguiente"*/
+.last {
+  border-radius: 0px 5px 5px 0px;
+}
+/*Establece un color diferente al boton de la página actual
+haciendo más fácil saber en que posición nos encontramos*/
+.active {
+  background-color: #D3D3D3;
+}
+
+.disabled {
+  opacity: 0.5;
+}
